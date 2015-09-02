@@ -15,14 +15,14 @@ with open(path.join(here, 'DESCRIPTION.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='Zoner',
+    name='python-bindtools',
 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
     version='0.1',
 
-    description='A DNS tool wrapper for python',
+    description='A wrapper for binds DNS tools',
     long_description=long_description,
 
     # The project's main homepage.
@@ -30,7 +30,7 @@ setup(
 
     # Author details
     author='Scott Godbold',
-    author_email='scgodbold@gmail.com',
+    author_email='scott@gmail.com',
 
     # Choose your license
     license='MIT',
@@ -53,10 +53,11 @@ setup(
         # that you indicate whether you support Python 2, Python 3 or both.
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.4',
     ],
 
     # What does your project relate to?
-    keywords='dns zones bind rdnc named',
+    keywords='dns rndc zone named bind',
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
